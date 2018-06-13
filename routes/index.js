@@ -46,5 +46,10 @@ router.post('/fromWA', function(req, res){
   res.send('Ok');
 });
 
+router.post('/toWA', function(req, res){
+  var message = req.body;
+  console.log("Message sent to WA\n");
+  console.log(message);
+});
 
 module.exports = router;
